@@ -15,7 +15,7 @@ const get: NextApiHandler<GetResponse> = async (request, response) => {
     if (!label) throw new Error('missing label');
     if (typeof label !== 'string') throw new Error('invalid label');
 
-    const icon = `https://${request.headers.host}/LogoCommunity.svg`;
+    const icon = `https://${request.headers.host}/merchant.png`;
 
     response.status(200).send({
         label,
